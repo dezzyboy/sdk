@@ -22,6 +22,8 @@ export namespace BridgeUtils {
         ChainId.ARBITRUM,
         ChainId.AVALANCHE,
         ChainId.HARMONY,
+        ChainId.GODWOKEN,
+        ChainId.FTMTEST,
     ];
 
     export const GAS_TOKEN_CHAINS = [
@@ -29,6 +31,8 @@ export namespace BridgeUtils {
         ChainId.OPTIMISM,
         ChainId.BOBA,
         ChainId.ARBITRUM,
+        ChainId.GODWOKEN,
+        ChainId.FTMTEST,
     ];
 
     export const isL2ETHChain          = (chainId: number): boolean => L2_ETH_CHAINS.includes(chainId);

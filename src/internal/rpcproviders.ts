@@ -22,6 +22,8 @@ const ENV_KEY_MAP: StringMap = {
     [ChainId.AVALANCHE]: "AVALANCHE_RPC_URI",
     [ChainId.AURORA]:    "AURORA_RPC_URI",
     [ChainId.HARMONY]:   "HARMONY_RPC_URI",
+    [ChainId.GODWOKEN]:   "GODWOKEN_RPC_URI",
+    [ChainId.FTMTEST]:   "FTMTEST_RPC_URI",
 }
 
 const CHAIN_RPC_URIS: StringMap = {
@@ -39,6 +41,8 @@ const CHAIN_RPC_URIS: StringMap = {
     [ChainId.AVALANCHE]: "https://api.avax.network/ext/bc/C/rpc",
     [ChainId.AURORA]:    "https://mainnet.aurora.dev",
     [ChainId.HARMONY]:   "https://api.harmony.one/",
+    [ChainId.GODWOKEN]:   "https://godwoken-testnet-web3-v1-rpc.ckbapp.dev",
+    [ChainId.FTMTEST]:   "https://rpc.testnet.fantom.network",
 }
 
 const CHAINID_URI_MAP: StringMap = _.fromPairs(supportedChainIds().map(cid => [cid, _getChainRpcUri(cid)]));

@@ -13,6 +13,8 @@ export enum ChainId {
     AVALANCHE    = 43114,
     AURORA       = 1313161554,
     HARMONY      = 1666600000,
+    GODWOKEN     = 868455272153094,
+    FTMTEST     = 4002,
 }
 
 export const supportedChainIds = (): number[] =>

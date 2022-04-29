@@ -79,6 +79,15 @@ export namespace SynapseContracts {
         bridgeZap: "0xB003e75f7E0B5365e814302192E99b4EE08c0DEd",
     });
 
+    export const Godwoken = new SynapseContract({
+        bridge:    "0x020A0DE66763aad53C02d43772fFFEe561290509",
+        bridgeZap: "0xFE0B3e220495A1d3fF8DE4F305e898AAE904c5ad",
+    });
+    export const Ftmtest = new SynapseContract({
+        bridge:    "0x2A6a5315a046A795132b8bAc831766cAf27575eA",
+        bridgeZap: "0x27bE212A3a654d3fa494dF8c38cc1A51725043bB",
+    });
+
     export const Boba = new SynapseContract({
         bridge:    "0x432036208d2717394d2614d6697c46DF3Ed69540",
         bridgeZap: "0x64B4097bCCD27D49BC2A081984C39C3EeC427a2d",
@@ -134,6 +143,8 @@ export namespace SynapseContracts {
         [ChainId.AVALANCHE]: Avalanche,
         [ChainId.AURORA]:    Aurora,
         [ChainId.HARMONY]:   Harmony,
+        [ChainId.GODWOKEN]:  Godwoken,
+        [ChainId.FTMTEST]:  Ftmtest,
     }
 
     export function contractsForChainId(chainId: number): SynapseContract {

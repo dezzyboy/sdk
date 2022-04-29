@@ -954,6 +954,8 @@ export namespace Bridge {
         [ChainId.AVALANCHE]: 5,
         [ChainId.HARMONY]:   1,
         [ChainId.AURORA]:    5,
+        [ChainId.GODWOKEN]:    8,
+        [ChainId.FTMTEST]:    5,
     };
 
     export function getRequiredConfirmationsForBridge(network: Networks.Network | number): number {

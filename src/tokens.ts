@@ -23,6 +23,8 @@ export namespace Tokens {
             [ChainId.AVALANCHE]: "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
             [ChainId.AURORA]:    "0xe3520349F477A5F6EB06107066048508498A291b",
             [ChainId.HARMONY]:   "0xef977d2f931c1978db5f6747666fa1eacb0d0339",
+            [ChainId.GODWOKEN]:   "0xBCa5910433f509Ac834d7b51a2A94F30c29aB056",
+            [ChainId.FTMTEST]:   "0xA64c2a4470708c4709654Dd0363D3A48F9bB656c",
         },
         swapType: SwapType.USD
     });
@@ -33,6 +35,8 @@ export namespace Tokens {
         decimals:    18,
         addresses: {
             [ChainId.BSC]: "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+            [ChainId.GODWOKEN]: "0xE88a7e3C92572Ffb76Dd8413FF2f1EA893351A07",
+            [ChainId.FTMTEST]: "0x70eFd867D93EEd9CF2367Fa9F3F80794744530d0",
         },
         swapType: SwapType.USD
     });
@@ -51,6 +55,8 @@ export namespace Tokens {
             [ChainId.ARBITRUM]:  6,
             [ChainId.AURORA]:    6,
             [ChainId.HARMONY]:   6,
+            [ChainId.GODWOKEN]:   18,
+            [ChainId.FTMTEST]:   18,
         },
         addresses: {
             [ChainId.ETH]:       "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -63,6 +69,8 @@ export namespace Tokens {
             [ChainId.AVALANCHE]: "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
             [ChainId.AURORA]:    "0xB12BFcA5A55806AaF64E99521918A4bf0fC40802",
             [ChainId.HARMONY]:   "0x985458e523db3d53125813ed68c274899e9dfab4",
+            [ChainId.GODWOKEN]:  "0x5f774D8713fF0e5E3579496e4c41b8fd8Be9a2B6",
+            [ChainId.FTMTEST]:  "0xdACE8b0f5B51F5C36dAFA073967DE7bda2d39bAc",
         },
         swapType: SwapType.USD
     });
@@ -80,6 +88,8 @@ export namespace Tokens {
             [ChainId.AVALANCHE]: 6,
             [ChainId.AURORA]:    6,
             [ChainId.HARMONY]:   6,
+            [ChainId.GODWOKEN]:   18,
+            [ChainId.FTMTEST]:   18,
         },
         addresses: {
             [ChainId.ETH]:       "0xdac17f958d2ee523a2206206994597c13d831ec7",
@@ -91,6 +101,8 @@ export namespace Tokens {
             [ChainId.AVALANCHE]: "0xc7198437980c041c805a1edcba50c1ce5db95118",
             [ChainId.AURORA]:    "0x4988a896b1227218e4A686fdE5EabdcAbd91571f",
             [ChainId.HARMONY]:   "0x3c2b8be99c50593081eaa2a724f0b8285f5aba8f",
+            [ChainId.GODWOKEN]:   "0xFF77EBB2981dCB46590D383C87f40811259CAC70",
+            [ChainId.FTMTEST]:   "0xfDe53bc19Ed094Dfa234E9789Ed938F009495C88",
         },
         swapType: SwapType.USD
     });

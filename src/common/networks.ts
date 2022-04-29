@@ -26,6 +26,7 @@ export namespace Networks {
         {chainId: ChainId.AVALANCHE, token: Tokens.AVWETH},
         {chainId: ChainId.MOONRIVER, token: Tokens.MOVR},
         {chainId: ChainId.MOONRIVER, token: Tokens.WMOVR},
+        
     ]
 
     const checkWrappedToken = (chainId: ChainId, token: Token): boolean => {
@@ -129,6 +130,16 @@ export namespace Networks {
         chainId:       ChainId.FANTOM,
         chainCurrency: "FTM",
     });
+    export const GODWOKEN = new Network({
+        name:          "Godwoken",
+        chainId:       ChainId.GODWOKEN,
+        chainCurrency: "CKB",
+    });
+    export const FTMTEST = new Network({
+        name:          "Ftmtest",
+        chainId:       ChainId.FTMTEST,
+        chainCurrency: "FTM",
+    });
 
     export const BOBA = new Network({
        name:         "Boba Network",
@@ -193,6 +204,8 @@ export namespace Networks {
         [ChainId.AVALANCHE]:  AVALANCHE,
         [ChainId.AURORA]:     AURORA,
         [ChainId.HARMONY]:    HARMONY,
+        [ChainId.GODWOKEN]:    GODWOKEN,
+        [ChainId.FTMTEST]:    FTMTEST,
     }
 
     export const networkName = (chainId: number): string => fromChainId(chainId).name

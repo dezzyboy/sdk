@@ -43,7 +43,7 @@ export default function DestinationGrid(props: DestinationGridProps) {
     return (
         <div className="flex flex-wrap place-content-center h-full w-full gap-10">
             <div>
-                <NetworkMenu {...networkMenuProps} />
+                <BridgeEstimateSection {...props} /> 
             </div>
 
             <div />
@@ -51,7 +51,7 @@ export default function DestinationGrid(props: DestinationGridProps) {
             <div className="flex flex-wrap place-content-center">
                 <TokenMenu {...tokenMenuProps} />
 
-                <BridgeEstimateSection {...props} /> 
+                <NetworkMenu {...networkMenuProps} />
             </div>
         </div>
     )

@@ -77,14 +77,22 @@ export default function SourceGrid(props: SourceNetworkGridProps) {
     } = useSourceTokenMenu();
 
     return (
-        <div>
-            <NetworkMenu {...networkMenuProps} />
-            <TokenMenu {...tokenMenuProps} />
-            <AmountFromDropdown
-                selected={selectedAmountFrom}
-                setSelected={setSelectedAmountFrom}
-                items={AMOUNTS_FROM_OPTIONS}
-            />
+        <div className="flex flex-wrap place-content-center h-full w-full gap-10">
+            <div>
+                <AmountFromDropdown
+                    selected={selectedAmountFrom}
+                    setSelected={setSelectedAmountFrom}
+                    items={AMOUNTS_FROM_OPTIONS}
+                />
+            </div>
+
+            <div />
+
+            <div className="flex flex-wrap place-content-center">
+                <NetworkMenu {...networkMenuProps} />
+
+                <TokenMenu {...tokenMenuProps} /> 
+            </div>
         </div>
     )
 }

@@ -25,7 +25,7 @@ interface DropdownMenuProps {
 export default function DropdownMenu({title, selectedItem, setSelectedItem, items}: DropdownMenuProps) {
     return(
         <div className={"flex items-center justify-center"}>
-            <div className={"w-60 max-w-xs"}>
+            <div className={"w-40 max-w-xs"}>
                 <Listbox value={selectedItem} onChange={setSelectedItem} as={"div"} className={"space-y-1"}>
                     {({open}) => (
                         <>
@@ -85,7 +85,8 @@ export default function DropdownMenu({title, selectedItem, setSelectedItem, item
                                                         </div>
                                                     )}
                                                 </Listbox.Option>
-                                            )})}
+                                            )
+                                        })}
                                     </Listbox.Options>
                                 </Transition>
                             </div>

@@ -1,5 +1,5 @@
 import {useMetaMask} from "metamask-react";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 
 import type {SetStateFunction} from "@utils";
 
@@ -8,12 +8,13 @@ import {ChainId, Networks, supportedNetworks} from "@synapseprotocol/sdk";
 import {useNetworkMenu} from "./hooks/useNetworkMenu";
 import {useSourceTokenMenu} from "./hooks/useTokenMenu";
 
-import AmountFromDropdown from "./components/AmountFromDropdown";
+// import AmountFromDropdown from "./components/AmountFromDropdown";
 import type {AmountDropdownItem} from "./components/AmountFromDropdown";
 
 import {BigNumber} from "ethers";
 
 import {BridgeDirections} from "./Directions";
+import AmountFromInput from "./components/AmoutFromInput";
 
 export const AMOUNTS_FROM_OPTIONS: AmountDropdownItem[] = [5, 10, 25, 50, 75, 100, 500, 1000].map((n) => {
     let amount = BigNumber.from(n);
@@ -79,16 +80,15 @@ export default function SourceGrid(props: SourceNetworkGridProps) {
     return (
         <div className="flex flex-wrap place-content-center h-full w-full gap-10">
             <div>
-                <AmountFromDropdown
+                <AmountFromInput
                     selected={selectedAmountFrom}
                     setSelected={setSelectedAmountFrom}
-                    items={AMOUNTS_FROM_OPTIONS}
                 />
             </div>
 
             <div />
 
-            <div className="flex flex-wrap place-content-center">
+            <div className="flex flex-wrap place-content-center gap-5">
                 <NetworkMenu {...networkMenuProps} />
 
                 <TokenMenu {...tokenMenuProps} /> 

@@ -30,7 +30,7 @@ export default function DropdownMenu({title, selectedItem, setSelectedItem, item
                 <Listbox value={selectedItem} onChange={setSelectedItem} as={"div"} className={"space-y-1"}>
                     {({open}) => (
                         <>
-                            <Listbox.Label className={"block text-sm font-medium"}>{title}</Listbox.Label>
+                            {/* <Listbox.Label className={"block text-sm font-medium"}>{title}</Listbox.Label> */}
                             <div className={"relative"}>
                                 <span className={"inline-block w-full rounded-md"}>
                                     <Listbox.Button
@@ -41,7 +41,8 @@ export default function DropdownMenu({title, selectedItem, setSelectedItem, item
                                             "sm:text-sm",
                                             "focus:outline-none focus-visible:ring-2",
                                             "focus-visible:ring-opacity-75 focus-visible:ring-white",
-                                            "focus-visible:ring-offset-2 focus-visible:border-indigo-500"
+                                            "focus-visible:ring-offset-2 focus-visible:border-indigo-500",
+                                            "border border-solid border-1 border-purple-500 rounded-['50px']"
                                         )}
                                     >
                                         <span className={"block truncate text-lg"}>{selectedItem?.label || ""}</span>

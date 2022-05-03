@@ -48,7 +48,7 @@ export default function DestinationGrid(props: DestinationGridProps) {
 
             <div />
 
-            <div className="flex flex-wrap place-content-center">
+            <div className="flex flex-wrap place-content-center gap-5">
                 <TokenMenu {...tokenMenuProps} />
 
                 <NetworkMenu {...networkMenuProps} />

@@ -13,6 +13,10 @@ import {Grid} from "@components/Grid";
 
 import {BigNumber} from "ethers";
 
+const boxStyle = {
+    border : `border border-solid border-1 border-purple-500`,
+}
+
 
 
 function BridgePageContent(props: {className?: string}) {
@@ -22,8 +26,25 @@ function BridgePageContent(props: {className?: string}) {
     const [amountOut, setAmountOut] = useState<BigNumber>(BigNumber.from(0));
 
     return(
-        <div className={"w-1/4"}>
-            <Grid className={"grid-flow-col"} rows={4} cols={3} gapX={4} gapY={4}>
+        <div className={"w-1/2"}>
+            <div className={`${boxStyle.border} rounded-[50px] px-4 h-40`}>
+                <SourceGrid
+                    selectedAmountFrom={amountFrom}
+                    setSelectedAmountFrom={setAmountFrom}
+                />
+            </div>
+
+            <div className={"h-10"} />
+
+            <div className={`${boxStyle.border} rounded-[50px] px-4 h-40`}>
+                {amountFrom && <DestinationGrid
+                    amountIn={amountFrom?.amount || BigNumber.from(0)}
+                    amountOut={amountOut}
+                    setAmountOut={setAmountOut}
+                />}
+            </div>
+            
+            {/* <Grid className={"grid-flow-col"} rows={4} cols={3} gapX={4} gapY={4}>
                 <div className={"col-span-1"}>
                     <SourceGrid
                         selectedAmountFrom={amountFrom}
@@ -38,7 +59,7 @@ function BridgePageContent(props: {className?: string}) {
                         setAmountOut={setAmountOut}
                     />}
                 </div>
-            </Grid>
+            </Grid> */}
             <ApproveButon
                 amountFrom={amountFrom?.amount || BigNumber.from(0)}
                 approved={approved}

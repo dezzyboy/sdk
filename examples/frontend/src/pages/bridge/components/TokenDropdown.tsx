@@ -22,13 +22,13 @@ export default function TokenDropdown({tokens, direction, selected, setSelected}
     const title = direction === BridgeDirections.FROM ? "Source token" : "Destination token";
 
     return (
-        <DarkRoundedItem>
+        <>
             <DropdownMenu
                 title={title}
                 selectedItem={selected}
                 setSelectedItem={setSelected}
                 items={tokens}
             />
-        </DarkRoundedItem>
+        </>
     )
 }

@@ -41,10 +41,18 @@ export default function DestinationGrid(props: DestinationGridProps) {
     } = useDestinationTokenMenu();
 
     return (
-        <div>
-            <NetworkMenu {...networkMenuProps} />
-            <TokenMenu {...tokenMenuProps} />
-            <BridgeEstimateSection {...props} />
+        <div className="flex flex-wrap place-content-center h-full w-full gap-10">
+            <div>
+                <BridgeEstimateSection {...props} /> 
+            </div>
+
+            <div />
+
+            <div className="flex flex-wrap place-content-center gap-5">
+                <TokenMenu {...tokenMenuProps} />
+
+                <NetworkMenu {...networkMenuProps} />
+            </div>
         </div>
     )
 }

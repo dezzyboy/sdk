@@ -24,13 +24,13 @@ export default function NetworkDropdown({direction, selected, setSelected, netwo
     const title = direction === BridgeDirections.FROM ? "Source chain" : "Destination chain";
 
     return (
-        <DarkRoundedItem>
+        <>
             <DropdownMenu
                 title={title}
                 selectedItem={selected}
                 setSelectedItem={setSelected}
                 items={networks}
             />
-        </DarkRoundedItem>
+        </>
     )
 }

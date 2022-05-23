@@ -16,13 +16,13 @@ interface AmountDropdownProps {
 
 export default function AmountFromDropdown({selected, setSelected, items}: AmountDropdownProps) {
     return(
-        <DarkRoundedItem>
+        <>
             <DropdownMenu
-                title={"Select amount from"}
+                title={"FROM"}
                 selectedItem={selected}
                 setSelectedItem={setSelected}
                 items={items}
             />
-        </DarkRoundedItem>
+        </>
     )
 }

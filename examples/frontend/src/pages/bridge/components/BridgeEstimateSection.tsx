@@ -98,7 +98,7 @@ export default function BridgeEstimateSection(props: BridgeEstimateSectionProps)
     }, [fee]);
 
     return (
-        <DarkRoundedItem>
+        <>
             {estimate &&
                 <LabeledItem
                     title={"Estimated output"}
@@ -111,6 +111,6 @@ export default function BridgeEstimateSection(props: BridgeEstimateSectionProps)
                     value={formattedFee}
                 />
             }
-        </DarkRoundedItem>
+        </>
     )
 }
